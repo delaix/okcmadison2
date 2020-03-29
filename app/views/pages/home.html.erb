@@ -1,0 +1,49 @@
+<%= render "layouts/header" %>
+<%= render "layouts/left_sidebar" %>
+<div class="span-11" style="background:#CFCFCF;padding:1em;">
+  <h3><b>The Okinawan Karate Club of Madison</b></h3>
+  <h4><b>Martial arts training for adults and mature teens</b></h4>
+  <p>
+    <b>The Okinawan Karate Club of Madison</b> practices traditional Okinawan Shorin Ryu
+    karate as taught by <%= link_to "Eizo Shimabukuro O'Sensei", 
+    "http://www.usadojo.com/biographies/eizo-shimabukuro.htm" %> and Okinawan Shudokan
+    karate as taught by the late <%= link_to "Walter Todd Sensei",
+    "http://www.koryu.com/library/mskoss10.html" %>. Our training emphasizes <%= link_to 'practical karate', :pages_practical %> suitable for life protection and self development.
+  </p>
+  <p>
+    <b>Complete karate instruction:</b>
+      <ul>
+        <li>forms (kata)</li>
+        <li>self-defense</li>
+        <li>Okinawan weapons (kobudo)</li>
+        <li>overall fitness and conditioning</li>
+      </ul>
+    </p>
+  <p>
+    There are many additional benefits to karate training. As a dedicated student you can
+    <ul>
+      <li>improve strength and endurance</li>
+      <li>develop better posture</li>
+      <li>enhance focus and self discipline</li>
+      <li>build confidence</li>
+    </ul>
+  </p>
+  <p>
+    <%= render partial: 'layouts/class_link', :locals => {:content => "Try a class today."}%> If you would like more information about training,
+    please send e-mail to <%= render "layouts/email" %>.
+  </p>
+</div>
+<div class="span-7 last">
+    <p>
+      <iframe width="288" height="216" src="//www.youtube.com/embed/mOwFY5ADbsI?rel=0" frameborder="0" allowfullscreen></iframe>
+    </p> 
+    <%= render "layouts/contact" %>
+    <hsidebar>Instructor:</hsidebar>
+    <%= image_tag "sensei.png", :size => "115x153" %>
+    <p>
+      <b>Andrew de Laix Sensei</b> holds the rank of Shodan in the Shobayashi Ryu and Shudokan 
+      styles of karate. He is committed to teaching karate in the Okinawan tradition
+      as a life-preserving art.
+    </p>
+</div>
+<%= render "layouts/footer" %>

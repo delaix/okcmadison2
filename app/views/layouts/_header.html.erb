@@ -1,0 +1,47 @@
+<% if @location == :Home %>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+<% end %>
+<%= render "layouts/lightbox" %>
+<div class="span-24 style=margin-bottom:10px;">
+  <div style="position: relative">
+    <%= image_tag "logo.png" %>
+    <% if @location == :Home %>
+      <div class="g-plusone" data-size="small"></div>
+      <div class="fb-like" data-send="true" data-layout="button_count" data-width="450"data-show-faces="true" style="position: absolute; bottom: 0; right: 0;"></div> 
+    <% end %>
+  </div>
+  <div class="span-24" style="background:#F80000; margin-bottom:10px; margin-top:0px;border-right: 2px solid #000000; border-bottom: 3px solid #000000;text-align:right;color:#f3b921;">
+    <%= @location %>&nbsp;
+  </div>
+</div>
+<!-- Google +1 button script -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<!-- Google analytics tracking code -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38097759-1']);
+  _gaq.push(['_setDomainName', 'okcmadison.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>

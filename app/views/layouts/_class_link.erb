@@ -1,0 +1,8 @@
+<% if cookies['has_visited_classes'] %>
+  <%= link_to content, :pages_classes %>
+<% else %>
+<a href = "javascript:void(0)" 
+  onclick = "document.getElementById('light').style.display='block';document.getElementById('fade'). style.display='block'">
+  <%= content %>
+</a>
+<% end %>

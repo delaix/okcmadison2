@@ -1,0 +1,17 @@
+<div class="span-5">
+  <table class="leftlinks">
+    <tr><td><%= link_to 'Home', :pages_home %></td></tr>
+    <tr><td><%= link_to 'About', :pages_about %></td></tr>
+    <tr><td>
+      <%= render partial: 'layouts/class_link', :locals => {:content => "Classes"}%>
+    </td></tr>
+    <tr><td><%= link_to 'Blog', :pages_blog %></td></tr>
+    <tr><td><%= link_to 'Practical Karate', :pages_practical %></td></tr>
+  </table>
+  <div style="position: relative">
+    <%= image_tag "karateka.png" %>
+    <div style="position: absolute; bottom:20px; left:20px; font-size:200%; color:#F4A700; text-alignment:center">
+      <b>New students always welcome</b>
+    </div>
+  </div>
+</div>

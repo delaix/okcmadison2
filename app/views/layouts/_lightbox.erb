@@ -1,0 +1,37 @@
+<div id="light" class="white_content">
+  <div style="text-align:right;vertical-align:top;margin-top:-17px;margin-right:-17px;">
+    <a href = "javascript:void(0)"
+    class="link_button"
+    style="padding:3px"
+    onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+    [x]</a>
+  </div>
+  <div>
+    <span style="display:inline-block;height:300px;width=Automatic;float:left;margin:5px">
+      <h2 style="color:#F80000;font-weight:bold">Want two weeks<br>of free lessons?</h2>
+      <h4>Contact us at <%= render "layouts/email" %></h4>
+      <div style="color:#F80000;margin-top:40px;font-weight:bold;font-size:2em">Or visit us in person</div>
+      <div style="color:#F4A700; margin-top:0px;">(
+        <% time = Time.now %>
+        <% if time.wday < 3 or (time.wday == 3 and time.hour < 21) %>
+        Next class is Wednesday at 9 PM
+        <% elsif time.wday < 6 or (time.wday == 6 and time.hour < 13) %>
+        Next class is Saturday at 1:30 PM
+        <% else %>
+        Next class is Wednesday at 9 PM
+        <% end %>)
+      </div>
+      <div style="margin-top:75px">
+        <%= link_to 'learn more >>', :pages_classes, class: "link_button" %> <br/>
+      </div>
+    </span>
+    <span style="width:300px;height:300px;float:right;margin-right:5px">
+      <iframe  width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+        src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=549+Zor+Shrine+Place+,Madison,+WI&amp;aq=&amp;sll=43.056334,-89.51378&amp;sspn=0.00773,0.019097&amp;ie=UTF8&amp;hq=&amp;hnear=549+Zor+Shrine+Pl,+Madison,+Wisconsin+53719&amp;t=m&amp;ll=43.056346,-89.513769&amp;spn=0.018814,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed">
+      </iframe>
+    </span>
+  </div>
+</div>
+<div id="fade" class="black_overlay" 
+  onclick = document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'>
+</div> 
