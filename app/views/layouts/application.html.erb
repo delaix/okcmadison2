@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Okcmadison2</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
+<head>
+  <title>Okinawan Karate Club of Madison</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <% if @location == :Home %>
+    <meta property="og:title" content="Okinawan Karate Club of Madison" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.okcmadison.com" />
+    <meta property="og:image" content="http://www.okcmadison.com/assets/patch_icon.png" />
+    <meta property="og:site_name" content="Okinawan Karate Club of Madison" />
+    <meta property="fb:admins" content="100002284226489" />
+  <% end %>
+</head>
+<body>
+  <div class="container">
     <%= yield %>
-  </body>
+  </div>
+</body>
 </html>
