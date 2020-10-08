@@ -13,12 +13,12 @@
       <div style="color:#F80000;margin-top:40px;font-weight:bold;font-size:2em">Or visit us in person</div>
       <div style="color:#F4A700; margin-top:0px;">(
         <% time = Time.now %>
-        <% if time.wday < 3 or (time.wday == 3 and time.hour < 21) %>
-        Next class is Wednesday at 9 PM
-        <% elsif time.wday < 6 or (time.wday == 6 and time.hour < 13) %>
-        Next class is Saturday at 1:30 PM
+        <% if time.wday < 3 or (time.wday == 3 and time.hour < 20) %>
+        Next class is Wednesday at 8 PM
+        <% elsif time.wday < 6 or (time.wday == 6 and time.hour < 14) %>
+        Next class is Saturday at 2 PM
         <% else %>
-        Next class is Wednesday at 9 PM
+        Next class is Wednesday at 8 PM
         <% end %>)
       </div>
       <div style="margin-top:75px">
