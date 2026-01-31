@@ -3,7 +3,6 @@
 <head>
   <title>Okinawan Karate Club of Madison</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <% if @location == :Home %>
     <meta property="og:title" content="Okinawan Karate Club of Madison" />
@@ -13,6 +12,7 @@
     <meta property="og:site_name" content="Okinawan Karate Club of Madison" />
     <meta property="fb:admins" content="100002284226489" />
   <% end %>
+    <%= javascript_importmap_tags %>
 </head>
 <body>
   <div class="container">
