@@ -50,3 +50,7 @@ end
 gem 'tzinfo-data', platforms: [:windows, :jruby]
 
 gem 'sprockets-rails'
+
+gem "tailwindcss-ruby", "~> 4.1"
+
+gem "tailwindcss-rails", "~> 4.4"

@@ -3,3 +3,4 @@
 //= link_directory ../javascripts .js
 //= link rails-ujs.js
 //= link turbo.min.js
+//= link_tree ../builds
