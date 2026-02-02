@@ -11,7 +11,6 @@ gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 7.2'
 # Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
 gem 'importmap-rails', '~> 1.2'
 gem 'turbo-rails', '~> 2.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
