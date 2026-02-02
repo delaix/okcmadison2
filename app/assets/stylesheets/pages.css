@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 
 ul.links li {
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 table.leftlinks {
@@ -19,7 +19,7 @@ table.leftlinks tr:nth-child(even) td {
   background:#CFCFCF;
 }
 
-hsidebar {
+h.hsidebar {
   font-size: 125%;
   font-weight: bold;
   display: block;
@@ -36,9 +36,7 @@ hsidebar {
   height: 100%;
   background-color: black;
   z-index:1001;
-  -moz-opacity: 0.8;
   opacity:.80;
-  filter: alpha(opacity=80);
 }
  
 .white_content {
@@ -56,7 +54,7 @@ hsidebar {
 }
 
 .link_button, .white_content a, .make_button_link a {
-  font: bold 14px Arial;
+  font: bold 14px/1.2 Arial, sans-serif;
   text-decoration: none;
   background-color: #F80000;
   color: #F4A700;
