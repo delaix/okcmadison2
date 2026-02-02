@@ -10,17 +10,18 @@
   </script>
 <% end %>
 <%= render "layouts/lightbox" %>
-<div class="span-24 style=margin-bottom:10px;">
-  <div style="position: relative">
-    <%= image_tag "logo.png" %>
-    <% if @location == :Home %>
-      <div class="g-plusone" data-size="small"></div>
-      <div class="fb-like" data-send="true" data-layout="button_count" data-width="450"data-show-faces="true" style="position: absolute; bottom: 0; right: 0;"></div> 
-    <% end %>
-  </div>
-  <div class="span-24" style="background:#F80000; margin-bottom:10px; margin-top:0px;border-right: 2px solid #000000; border-bottom: 3px solid #000000;text-align:right;color:#f3b921;">
-    <%= @location %>&nbsp;
-  </div>
+<div class="grid grid-cols-24">
+	<div class="col-span-full">
+	  <div style="position: relative">
+		<%= image_tag "logo.png" %>
+		<% if @location == :Home %>
+		  <div class="fb-like" data-send="true" data-layout="button_count" data-width="450"data-show-faces="true" style="position: absolute; bottom: 0; right: 0;"></div> 
+		<% end %>
+	  </div>
+	  <div class="col-span-24" style="background:#F80000; margin-bottom:10px; margin-top:0px;border-right: 2px solid #000000; border-bottom: 3px solid #000000;text-align:right;color:#f3b921;">
+		<%= @location %>&nbsp;
+	  </div>
+	</div>
 </div>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-997EEKFNEF"></script>
