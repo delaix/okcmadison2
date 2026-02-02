@@ -3,8 +3,18 @@
 		<%= image_tag "logo.png" %>
 	</div>
 </div>
-<div class="col-span-full" style="background:#F80000; margin-bottom:10px; margin-top:0px;border-right: 2px solid #000000; border-bottom: 3px solid #000000;text-align:right;color:#f3b921;">
+<div class="col-span-full" style="background:#F80000; margin-bottom:0px; margin-top:0px;border-right: 2px solid #000000; border-bottom: 3px solid #000000;text-align:right;color:#f3b921;">
 	<%= @location %>&nbsp;
+</div>
+<div class="col-span-full">
+	<table class="leftlinks" style="margin-top:2px;">
+		<tr>
+			<td><%= link_to 'Home', :pages_home %></td>
+			<td><%= link_to 'About', :pages_about %></td>
+			<td><%= link_to 'Classes', :pages_classes %></td>
+			<td><%= link_to 'Practical Karate', :pages_practical %></td>
+		</tr>
+	</table>
 </div>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-997EEKFNEF"></script>
