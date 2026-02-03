@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Okinawan Karate Club of Madison</title>
-    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
-  <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+	<%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= stylesheet_link_tag "typography" %>
   <%= csrf_meta_tags %>
   <% if @location == :Home %>
-    <meta property="og:title" content="Okinawan Karate Club of Madison" />
+    <meta property="og:title" content="Home of the Okinawan Karate Club of Madison" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.okcmadison.com" />
     <meta property="og:image" content="http://www.okcmadison.com/assets/patch_icon.png" />
     <meta property="og:site_name" content="Okinawan Karate Club of Madison" />
     <meta property="fb:admins" content="100002284226489" />
+  	<title>Home of the Okinawan Karate Club of Madison</title>
+		<meta name="description" content="This is the home of the Okinawan Karate Club of Madison where we practice traditional Shobayashi ruy karate. Get information on oru training philosophy and classes here.">
+		<link rel="canonical" href="https://www.okcmadison.com" />
   <% end %>
-    <%= javascript_importmap_tags %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<%= javascript_importmap_tags %>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="container mx-auto px-4">
