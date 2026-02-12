@@ -2,7 +2,7 @@
   <%= render "layouts/header" %>
   <% if cookies[:first_class_free_banner_dismissed].blank? %>
   <div id="first-class-banner" class="col-span-full first-class-banner">
-    <span class="first-class-banner-text">The next class is <%= next_class_day %>. Try your first class for free!</span>
+    <span class="first-class-banner-text">The next class is <%= next_class_day %>. Contact us at <%= render "layouts/email" %> to start your free 2 weeks of classes!</span>
     <button type="button" class="first-class-banner-close" aria-label="Dismiss banner">&times;</button>
   </div>
   <% end %>
