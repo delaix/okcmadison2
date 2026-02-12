@@ -65,3 +65,44 @@ h.hsidebar {
 .link_button:hover, .white_content a:hover, .make_button_link a:hover {
   color: white;
 }
+
+/* First class free banner */
+.first-class-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: rgba(244, 167, 0, 0.25);
+  color: #333;
+  padding: 12px 16px;
+  margin-top: 2px;
+  margin-bottom: 16px;
+  border: 1px solid #F4A700;
+  border-radius: 4px;
+}
+
+.first-class-banner-text {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+  color: #B22222;
+}
+
+.first-class-banner-close {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(244, 167, 0, 0.4);
+  border: 1px solid #F4A700;
+  color: #333;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-size: 1.2em;
+  line-height: 1;
+  border-radius: 4px;
+}
+
+.first-class-banner-close:hover {
+  background: rgba(244, 167, 0, 0.6);
+}

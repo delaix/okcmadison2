@@ -8,7 +8,6 @@ class PagesController < ApplicationController
   end
 
   def classes
-    cookies['has_visited_classes'] = true
     @location = :Classes
   end
 
