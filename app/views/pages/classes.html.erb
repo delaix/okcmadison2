@@ -1,10 +1,16 @@
 <div class="grid grid-cols-11 gap-x-4 md:grid-cols-24 max-w-sm md:max-w-4xl mx-auto w-full">
   <%= render "layouts/header" %>
+  <% if cookies[:first_class_free_banner_dismissed].blank? %>
+  <div id="first-class-banner" class="col-span-full first-class-banner">
+    <span class="first-class-banner-text">The next class is <%= next_class_day %>. Try your first class for free!</span>
+    <button type="button" class="first-class-banner-close" aria-label="Dismiss banner">&times;</button>
+  </div>
+  <% end %>
   <%= render "layouts/left_sidebar" %>
   <div class="col-span-11" style="background:#CFCFCF;padding:1em;">
     <h1>About Our Classes</h1>
     <p>
-      Classes are held every <b>Wednesday at 8:30PM</b> and <b>Saturday at 2PM</b> at <b>549 Zor Shrine Place</b>. Your first two weeks of training are totally free. If you decide you would like to join the Okinawan Karate Club of Madison, dues are a flat <b>$75 a month</b> with no long term contracts and no hidden fees.
+      Classes are held every <b>Wednesday at 8:30 pm</b> and <b>Saturday at 2 pm</b> at <b>549 Zor Shrine Place</b>. Your first two weeks of training are totally free. If you decide you would like to join the Okinawan Karate Club of Madison, dues are a flat <b>$75 a month</b> with no long term contracts and no hidden fees.
     </p>
     <h3>Who may join:</h3>
     <p>
@@ -25,8 +31,8 @@
     <%= render "layouts/contact" %>
     <h class="hsidebar">Schedule</h>
     <p>
-      Wednesday 8:30pm to 9:30pm<br/>
-      Saturday 2pm to 3pm
+      Wednesday 8:30 pm to 9:30 pm<br/>
+      Saturday 2 pm to 3 pm
     </p>
     <h class="hsidebar">Club Dues</h>
     <p>
@@ -67,3 +73,20 @@ var google_remarketing_only = false;
 <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1002905662/?label=6XXJCPLX4QoQvsCc3gM&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
+<script>
+(function() {
+  var banner = document.getElementById('first-class-banner');
+  if (!banner) return;
+
+  function setDismissedCookie() {
+    var expires = new Date();
+    expires.setFullYear(expires.getFullYear() + 1);
+    document.cookie = 'first_class_free_banner_dismissed=1; path=/; expires=' + expires.toUTCString();
+  }
+
+  banner.querySelector('.first-class-banner-close').addEventListener('click', function() {
+    setDismissedCookie();
+    banner.style.display = 'none';
+  });
+})();
+</script>
