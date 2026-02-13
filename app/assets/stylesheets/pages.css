@@ -2,10 +2,14 @@
    They will automatically be included in application.css. */
 
 #first-class-banner a,
-#first-class-banner a:hover,
 #first-class-banner a:visited,
 #first-class-banner a:focus {
   color: var(--color-banner-text) !important;
+  text-decoration: none !important;
+}
+
+#first-class-banner a:hover {
+  color: var(--color-brand-gold-alt) !important;
   text-decoration: none !important;
 }
 
