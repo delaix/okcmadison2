@@ -10,10 +10,6 @@ class PagesController < ApplicationController
   def classes
     @location = :Classes
   end
-
-  def blog
-    @location = :Blog
-  end
   
   def practical
     @location = 'Practical Karate'
