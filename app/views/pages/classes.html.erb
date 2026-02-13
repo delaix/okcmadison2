@@ -2,7 +2,7 @@
   <%= render "layouts/header" %>
   <% if cookies[:first_class_free_banner_dismissed].blank? %>
   <div id="first-class-banner" class="col-span-full flex items-center justify-center relative py-3 px-4 mt-0.5 mb-4 rounded border border-brand-gold bg-[rgba(244,167,0,0.25)]">
-    <span class="font-bold text-lg text-center text-banner-text">The next class is <%= next_class_day %>. Contact us at <%= render "layouts/email" %> to start your free 2 weeks of classes!</span>
+    <span class="font-medium text-base text-center text-banner-text">The next class is <%= next_class_day %>. Contact us at <%= render "layouts/email" %> to start your free 2 weeks of classes!</span>
     <button type="button" class="first-class-banner-close absolute top-0 right-0 p-1 text-xl leading-none cursor-pointer border border-brand-gold rounded-tr rounded-br bg-[rgba(244,167,0,0.4)] hover:bg-[rgba(244,167,0,0.6)] text-gray-800" aria-label="Dismiss banner">&times;</button>
   </div>
   <% end %>
