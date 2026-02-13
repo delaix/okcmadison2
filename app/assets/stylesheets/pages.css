@@ -8,3 +8,14 @@
   color: var(--color-banner-text) !important;
   text-decoration: none !important;
 }
+
+.contact-email a,
+.contact-email a:visited {
+  color: #facc15 !important;
+  text-decoration: none !important;
+  font-size: 1.25rem;
+}
+
+.contact-email a:hover {
+  color: white !important;
+}
