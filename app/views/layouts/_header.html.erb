@@ -3,16 +3,16 @@
 		<%= image_tag "logo.png" %>
 	</div>
 </div>
-<div class="col-span-full" style="background:#F80000; margin-bottom:0px; margin-top:0px;border-right: 2px solid #000000; border-bottom: 3px solid #000000;text-align:right;color:#f3b921;">
+<div class="col-span-full bg-brand-red border-r-2 border-b-[3px] border-black text-right text-brand-gold-alt">
 	<%= @location %>&nbsp;
 </div>
 <div class="col-span-full">
-	<table class="leftlinks" style="margin-top:2px;">
+	<table class="leftlinks mt-0.5">
 		<tr>
-			<td <% if @location == :Home %> style="background:#EFEFEF" <% end %> ><%= link_to 'Home', :pages_home %></td>
-			<td <% if @location == :About %> style="background:#EFEFEF" <% end %> ><%= link_to 'About', :pages_about %></td>
-			<td <% if @location == :Classes %> style="background:#EFEFEF" <% end %> ><%= link_to 'Classes', :pages_classes %></td>
-			<td <% if @location == "Practical Karate" %> style="background:#EFEFEF" <% end %> ><%= link_to 'Practical Karate', :pages_practical %></td>
+			<td class="<%= @location == :Home ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'Home', :pages_home %></td>
+			<td class="<%= @location == :About ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'About', :pages_about %></td>
+			<td class="<%= @location == :Classes ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'Classes', :pages_classes %></td>
+			<td class="<%= @location == 'Practical Karate' ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'Practical Karate', :pages_practical %></td>
 		</tr>
 	</table>
 </div>
