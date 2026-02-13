@@ -6,16 +6,16 @@
 <div class="col-span-full bg-brand-red border-r-2 border-b-[3px] border-black text-right text-brand-gold-alt">
 	<%= @location %>&nbsp;
 </div>
-<div class="col-span-full">
-	<table class="leftlinks mt-0.5">
+<nav class="col-span-full mt-0.5">
+	<table class="w-full border-collapse border border-black">
 		<tr>
-			<td class="<%= @location == :Home ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'Home', :pages_home %></td>
-			<td class="<%= @location == :About ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'About', :pages_about %></td>
-			<td class="<%= @location == :Classes ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'Classes', :pages_classes %></td>
-			<td class="<%= @location == 'Practical Karate' ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'Practical Karate', :pages_practical %></td>
+			<td class="border border-black border-l-[5px] border-l-brand-red px-4 py-2 <%= @location == :Home ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'Home', :pages_home, class: "block text-center hover:opacity-80" %></td>
+			<td class="border border-black border-l-[5px] border-l-brand-red px-4 py-2 <%= @location == :About ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'About', :pages_about, class: "block text-center hover:opacity-80" %></td>
+			<td class="border border-black border-l-[5px] border-l-brand-red px-4 py-2 <%= @location == :Classes ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'Classes', :pages_classes, class: "block text-center hover:opacity-80" %></td>
+			<td class="border border-black border-l-[5px] border-l-brand-red px-4 py-2 <%= @location == 'Practical Karate' ? 'bg-nav-active' : 'bg-content-bg' %>"><%= link_to 'Practical Karate', :pages_practical, class: "block text-center hover:opacity-80" %></td>
 		</tr>
 	</table>
-</div>
+</nav>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-997EEKFNEF"></script>
 <script>
