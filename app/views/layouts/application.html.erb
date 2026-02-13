@@ -21,7 +21,14 @@
 </head>
 <body>
   <div class="container mx-auto px-4">
-    <%= yield %>
+    <div class="grid grid-cols-11 gap-x-4 md:grid-cols-24 max-w-sm md:max-w-4xl mx-auto w-full">
+      <%= render "layouts/header" %>
+      <%= yield :banner %>
+      <%= render "layouts/left_sidebar" %>
+      <%= yield %>
+      <br/>
+      <%= render "layouts/footer" %>
+    </div>
   </div>
 </body>
 </html>
