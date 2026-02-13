@@ -5,20 +5,6 @@ ul.links li {
   margin-bottom: 5px;
 }
 
-table.leftlinks {
-  border-collapse:collapse;
-}
-
-table.leftlinks td {
-  background: var(--color-content-bg);
-  border: 1px solid #000000;
-  border-left: 5px solid var(--color-brand-red);
-}
-
-table.leftlinks tr:nth-child(even) td {
-  background: var(--color-content-bg);
-}
-
 h.hsidebar {
   font-size: 125%;
   font-weight: bold;
