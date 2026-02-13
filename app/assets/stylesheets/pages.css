@@ -11,11 +11,21 @@
 
 .contact-email a,
 .contact-email a:visited {
-  color: #facc15 !important;
-  text-decoration: none !important;
+  display: inline-block;
+  background-color: var(--color-brand-red);
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
   font-size: 1.25rem;
+  color: var(--color-contact-link) !important;
+  text-decoration: none !important;
 }
 
 .contact-email a:hover {
   color: white !important;
+}
+
+.contact-email a:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px var(--color-brand-gold);
 }
