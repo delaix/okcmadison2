@@ -1,14 +1,10 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 
-#first-class-banner a {
-  color: var(--color-banner-text);
-  text-decoration: none;
-}
-
+#first-class-banner a,
 #first-class-banner a:hover,
 #first-class-banner a:visited,
 #first-class-banner a:focus {
-  color: var(--color-banner-text);
-  text-decoration: none;
+  color: var(--color-banner-text) !important;
+  text-decoration: none !important;
 }
