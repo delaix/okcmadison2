@@ -14,4 +14,8 @@ class PagesController < ApplicationController
   def practical
     @location = 'Practical Karate'
   end
+
+  def social
+    @location = :Social
+  end
 end
