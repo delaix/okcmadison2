@@ -5,10 +5,10 @@ module PagesHelper
     hour = now.hour
     min = now.min
 
-    # Wednesday if between Saturday 2 pm and Wednesday 8:30 pm
-    return "Wednesday at 8:30 pm" if wday == 6 && (hour > 14 || (hour == 14 && min >= 0))
-    return "Wednesday at 8:30 pm" if wday.between?(0, 2)  # Sun, Mon, Tue
-    return "Wednesday at 8:30 pm" if wday == 3 && (hour < 20 || (hour == 20 && min < 30))
+    # Wednesday if between Saturday 2 pm and Wednesday 8 pm
+    return "Wednesday at 8:00 pm" if wday == 6 && (hour > 14 || (hour == 14 && min >= 0))
+    return "Wednesday at 8:00 pm" if wday.between?(0, 2)  # Sun, Mon, Tue
+    return "Wednesday at 8:00 pm" if wday == 3 && hour < 20
 
     "Saturday at 2 pm"
   end
